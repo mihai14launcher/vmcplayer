@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download VMC Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* Dark mode background */
+            color: #e0e0e0; /* Dark mode text color */
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            color: #e0e0e0;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff9800;
+        }
+
+        main {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .tab-content {
+            margin-top: 20px;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: #ff9800;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
+
+        .btn-download:hover {
+            background-color: #e68900;
+        }
+
+        .coming-soon {
+            font-size: 18px;
+            color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="home.html" class="logo">VMC Player</a>
+                <ul class="nav-links">
+                    <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="download.html"><i class="fa fa-download"></i> Download</a></li>
+                    <li><a href="https://discord.gg/PXTtxEK7g8"><i class="fa fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Download VMC Player</h1>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#windows">Windows Builds</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#linux">Linux Builds (Soon)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#android">Android Builds (Soon)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#ios">iOS Builds (Soon)</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="windows" class="container tab-pane active"><br>
+                    <h2>Windows Builds</h2>
+                    <p>Download the latest version of VMC Player for Windows.</p>
+                    <a href="versions/vmcinstaller1.exe" class="btn-download">Build 0124</a><br>
+                    <a href="soon" class="btn-download"></a>
+                </div>
+                <div id="linux" class="container tab-pane fade"><br>
+                    <h2>Linux Builds <span class="coming-soon">(Soon)</span></h2>
+                    <p>VMC Player will be available on Linux soon.</p>
+                </div>
+                <div id="android" class="container tab-pane fade"><br>
+                    <h2>Android Builds <span class="coming-soon">(Soon)</span></h2>
+                    <p>VMC Player will be available on Android soon.</p>
+                </div>
+                <div id="ios" class="container tab-pane fade"><br>
+                    <h2>iOS Builds <span class="coming-soon">(Soon)</span></h2>
+                    <p>VMC Player will be available on iOS soon.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</body>
+</html>
